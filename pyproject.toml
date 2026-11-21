@@ -1,0 +1,25 @@
+[project]
+name = "neuron-community-development"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Lee Hagaman", email = "hagamanlee@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "accelerate>=1.16.0",
+    "datasets>=5.2.0",
+    "matplotlib>=3.11.2",
+    "pandas>=3.1.1",
+    "torch>=2.15.0",
+    "tqdm>=4.70.1",
+    "transformer-lens>=4.4.0",
+    "transformers>=5.23.0",
+]
+
+[project.scripts]
+neuron-community-development = "neuron_community_development:main"
+
+[build-system]
+requires = ["uv_build>=0.12.21,<0.13.0"]
+build-backend = "uv_build"
